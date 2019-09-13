@@ -4,7 +4,7 @@ python:
  before_install:
     - python --version
     - pip install -U pip 
-    - pit install codecov
+    - pip install codecov
 script: 
     - coverage run --source=com/Guilherme/ -m unittest discover;coverage report -m
     - python -m unittest discover 
